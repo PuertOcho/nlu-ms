@@ -1636,3 +1636,112 @@ The following components require a SpacyNLP: run_SpacyTokenizer0. Please add the
 2025-07-02 15:27:20,974 INFO:     127.0.0.1:43256 - "GET /health HTTP/1.1" 200 OK
 2025-07-02 15:27:51,031 INFO:     127.0.0.1:34404 - "GET /health HTTP/1.1" 200 OK
 2025-07-02 15:28:21,103 INFO:     127.0.0.1:35926 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:28:51,148 INFO:     127.0.0.1:60628 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:29:21,206 INFO:     127.0.0.1:39292 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:29:51,243 INFO:     127.0.0.1:58234 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:30:21,297 INFO:     127.0.0.1:52674 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:30:51,370 INFO:     127.0.0.1:55356 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:31:21,435 INFO:     127.0.0.1:47430 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:31:51,477 INFO:     127.0.0.1:36222 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:32:21,553 INFO:     127.0.0.1:57436 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:32:51,630 INFO:     127.0.0.1:54822 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:33:21,685 INFO:     127.0.0.1:45962 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:33:51,755 INFO:     127.0.0.1:56388 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:34:21,820 INFO:     127.0.0.1:57416 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:34:51,892 INFO:     127.0.0.1:37438 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:35:21,932 INFO:     127.0.0.1:46710 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:35:51,992 INFO:     127.0.0.1:43224 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:36:22,032 INFO:     127.0.0.1:37122 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:36:52,086 INFO:     127.0.0.1:42244 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:37:22,126 INFO:     127.0.0.1:43318 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:37:52,191 INFO:     127.0.0.1:44416 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:38:22,235 INFO:     127.0.0.1:36856 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:38:52,307 INFO:     127.0.0.1:50424 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:39:22,348 INFO:     127.0.0.1:39090 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:39:52,412 INFO:     127.0.0.1:39462 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:40:22,490 INFO:     127.0.0.1:41152 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:40:52,554 INFO:     127.0.0.1:49210 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:41:22,592 INFO:     127.0.0.1:45224 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:41:52,662 INFO:     127.0.0.1:44936 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:42:22,703 INFO:     127.0.0.1:58018 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:42:52,756 INFO:     127.0.0.1:60480 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:51:11,567 server.py INFO:Started server process [[36m1[0m]
+2025-07-02 15:51:11,567 on.py INFO:Waiting for application startup.
+2025-07-02 15:51:11,567 on.py INFO:Application startup complete.
+2025-07-02 15:51:14,209 INFO:     127.0.0.1:43092 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:51:24,632 INFO:     172.26.0.1:49136 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:51:33,722 log_util.py INFO:[PREDICT_NLU] Cargando modelo para hogar_es...
+2025-07-02 15:51:33,724 processor.py INFO:Loading model /root/server/core/classifiers/nlu/../../models/nlu/hogar_es.tar.gz...
+2025-07-02 15:51:34,060 spacy_utils.py INFO:Trying to load SpaCy model with name 'es_core_news_md'.
+2025-07-02 15:51:34,894 spacy_utils.py INFO:Trying to load SpaCy model with name 'es_core_news_md'.
+2025-07-02 15:51:44,245 INFO:     127.0.0.1:49792 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:51:51,378 log_util.py INFO:[PREDICT_NLU] Modelo hogar_es cacheado exitosamente
+2025-07-02 15:51:51,439 log_util.py INFO:[PREDICT_NLU] prediction: {'intent': {'name': 'encender_luz', 'confidence': '1.00'}, 'entities': [], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '0.00', 'utterance': 'sube el volumen'}, {'name': 'poner_alarma', 'confidence': '0.00', 'utterance': 'pon una alarma a las 8'}], 'text': 'enciende la luz'}
+2025-07-02 15:51:51,482 log_util.py INFO:[PREDICT_TFIDF]: {'intent': {'name': 'encender_luz', 'confidence': '1.00'}, 'entities': [], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'parar_musica', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '1.00', 'utterance': 'enciende la luz'}], 'text': 'enciende la luz'}
+2025-07-02 15:51:51,482 log_util.py INFO:[PREDICT_MODEL] NLU scores: {'encender_luz': '1.00', 'subir_volumen': '0.00', 'poner_alarma': '0.00'}
+2025-07-02 15:51:51,482 log_util.py INFO:[PREDICT_MODEL] TFIDF scores: {'encender_luz': '1.00', 'parar_musica': '1.00', 'subir_volumen': '1.00'}
+2025-07-02 15:51:51,482 log_util.py INFO:[PREDICT_MODEL] ENSEMBLE scores: {'encender_luz': '1.00', 'subir_volumen': '0.50', 'poner_alarma': '0.00'}
+2025-07-02 15:51:51,482 INFO:     172.26.0.1:42284 - "POST /predict?domain=hogar&locale=es&userUtterance=enciende%20la%20luz HTTP/1.1" 200 OK
+2025-07-02 15:51:51,587 log_util.py INFO:[PREDICT_NLU] prediction: {'intent': {'name': 'apagar_luz', 'confidence': '1.00'}, 'entities': [], 'intent_ranking': [{'name': 'apagar_luz', 'confidence': '1.00', 'utterance': 'apaga la luz'}, {'name': 'cancelar_alarma', 'confidence': '0.00', 'utterance': 'cancela la alarma'}, {'name': 'consultar_tiempo', 'confidence': '0.00', 'utterance': 'qué tiempo hace'}], 'text': 'apaga la luz'}
+2025-07-02 15:51:51,627 log_util.py INFO:[PREDICT_TFIDF]: {'intent': {'name': 'encender_luz', 'confidence': '0.30'}, 'entities': [], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '0.30', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '0.30', 'utterance': 'enciende la luz'}, {'name': 'poner_alarma', 'confidence': '0.30', 'utterance': 'enciende la luz'}], 'text': 'apaga la luz'}
+2025-07-02 15:51:51,627 log_util.py INFO:[PREDICT_MODEL] NLU scores: {'apagar_luz': '1.00', 'cancelar_alarma': '0.00', 'consultar_tiempo': '0.00'}
+2025-07-02 15:51:51,627 log_util.py INFO:[PREDICT_MODEL] TFIDF scores: {'encender_luz': '0.30', 'subir_volumen': '0.30', 'poner_alarma': '0.30'}
+2025-07-02 15:51:51,627 log_util.py INFO:[PREDICT_MODEL] ENSEMBLE scores: {'apagar_luz': '0.50', 'cancelar_alarma': '0.00', 'consultar_tiempo': '0.00'}
+2025-07-02 15:51:51,627 INFO:     172.26.0.1:52134 - "POST /predict?domain=hogar&locale=es&userUtterance=apaga%20la%20luz HTTP/1.1" 200 OK
+2025-07-02 15:51:58,980 INFO:     172.26.0.1:52142 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:51:59,003 log_util.py INFO:[TRAIN_TFIDF] no changes found to training data, using pre-trained model
+2025-07-02 15:51:59,498 spacy_utils.py INFO:Trying to load SpaCy model with name 'es_core_news_md'.
+2025-07-02 15:52:00,129 spacy_utils.py INFO:Trying to load SpaCy model with name 'es_core_news_md'.
+2025-07-02 15:52:00,845 hooks.py INFO:Starting to train component 'RegexFeaturizer'.
+2025-07-02 15:52:00,849 hooks.py INFO:Finished training component 'RegexFeaturizer'.
+2025-07-02 15:52:00,857 hooks.py INFO:Starting to train component 'LexicalSyntacticFeaturizer'.
+2025-07-02 15:52:00,866 hooks.py INFO:Finished training component 'LexicalSyntacticFeaturizer'.
+2025-07-02 15:52:00,897 hooks.py INFO:Starting to train component 'CountVectorsFeaturizer'.
+2025-07-02 15:52:00,910 count_vectors_featurizer.py INFO:275 vocabulary items were created for text attribute.
+2025-07-02 15:52:00,911 hooks.py INFO:Finished training component 'CountVectorsFeaturizer'.
+2025-07-02 15:52:00,965 hooks.py INFO:Starting to train component 'CountVectorsFeaturizer'.
+2025-07-02 15:52:00,981 count_vectors_featurizer.py INFO:1334 vocabulary items were created for text attribute.
+2025-07-02 15:52:00,982 hooks.py INFO:Finished training component 'CountVectorsFeaturizer'.
+2025-07-02 15:52:01,047 hooks.py INFO:Starting to train component 'DIETClassifier'.
+2025-07-02 15:52:14,279 INFO:     127.0.0.1:57478 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:52:30,265 hooks.py INFO:Finished training component 'DIETClassifier'.
+2025-07-02 15:52:30,293 hooks.py INFO:Starting to train component 'EntitySynonymMapper'.
+2025-07-02 15:52:30,300 hooks.py INFO:Finished training component 'EntitySynonymMapper'.
+2025-07-02 15:52:30,303 hooks.py INFO:Starting to train component 'ResponseSelector'.
+2025-07-02 15:52:30,310 response_selector.py INFO:Retrieval intent parameter was left to its default value. This response selector will be trained on training examples combining all retrieval intents.
+2025-07-02 15:52:30,310 hooks.py INFO:Finished training component 'ResponseSelector'.
+2025-07-02 15:52:32,638 log_util.py INFO:[TRAIN_NLU] identified domain: hogar
+2025-07-02 15:52:32,639 log_util.py INFO:[TRAIN_NLU] identified locale: es
+2025-07-02 15:52:32,639 log_util.py INFO:[TRAIN_NLU] number of utterances for training: 121
+2025-07-02 15:52:32,639 log_util.py INFO:[TRAIN_NLU] number of intents for training: 15
+2025-07-02 15:52:32,639 INFO:     172.26.0.1:52158 - "POST /train?domain=hogar&locale=es HTTP/1.1" 200 OK
+2025-07-02 15:52:32,925 log_util.py INFO:[PREDICT_NLU] prediction: {'intent': {'name': 'encender_luz', 'confidence': '1.00'}, 'entities': [{'entity': 'lugar', 'start': 22, 'end': 28, 'confidence_entity': 0.9987245202064514, 'value': 'cocina', 'extractor': 'DIETClassifier', 'processors': ['EntitySynonymMapper']}], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '0.00', 'utterance': 'sube el volumen'}, {'name': 'poner_alarma', 'confidence': '0.00', 'utterance': 'pon una alarma a las 8'}], 'text': 'enciende la luz de la cocina'}
+2025-07-02 15:52:32,964 log_util.py INFO:[PREDICT_TFIDF]: {'intent': {'name': 'encender_luz', 'confidence': '1.00'}, 'entities': [], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'parar_musica', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '1.00', 'utterance': 'enciende la luz'}], 'text': 'enciende la luz de la cocina'}
+2025-07-02 15:52:32,964 log_util.py INFO:[PREDICT_MODEL] NLU scores: {'encender_luz': '1.00', 'subir_volumen': '0.00', 'poner_alarma': '0.00'}
+2025-07-02 15:52:32,964 log_util.py INFO:[PREDICT_MODEL] TFIDF scores: {'encender_luz': '1.00', 'parar_musica': '1.00', 'subir_volumen': '1.00'}
+2025-07-02 15:52:32,964 log_util.py INFO:[PREDICT_MODEL] ENSEMBLE scores: {'encender_luz': '1.00', 'subir_volumen': '0.50', 'poner_alarma': '0.00'}
+2025-07-02 15:52:32,964 INFO:     172.26.0.1:59588 - "POST /predict?domain=hogar&locale=es&userUtterance=enciende%20la%20luz%20de%20la%20cocina HTTP/1.1" 200 OK
+2025-07-02 15:52:33,079 log_util.py INFO:[PREDICT_NLU] prediction: {'intent': {'name': 'apagar_luz', 'confidence': '1.00'}, 'entities': [{'entity': 'lugar', 'start': 17, 'end': 22, 'confidence_entity': 0.9988107681274414, 'value': 'salón', 'extractor': 'DIETClassifier', 'processors': ['EntitySynonymMapper']}], 'intent_ranking': [{'name': 'apagar_luz', 'confidence': '1.00', 'utterance': 'apaga la luz'}, {'name': 'ayuda', 'confidence': '0.00', 'utterance': 'ayuda'}, {'name': 'poner_alarma', 'confidence': '0.00', 'utterance': 'pon una alarma a las 8'}], 'text': 'apaga la luz del salón'}
+2025-07-02 15:52:33,119 log_util.py INFO:[PREDICT_TFIDF]: {'intent': {'name': 'encender_luz', 'confidence': '0.30'}, 'entities': [], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '0.30', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '0.30', 'utterance': 'enciende la luz'}, {'name': 'poner_alarma', 'confidence': '0.30', 'utterance': 'enciende la luz'}], 'text': 'apaga la luz del salón'}
+2025-07-02 15:52:33,120 log_util.py INFO:[PREDICT_MODEL] NLU scores: {'apagar_luz': '1.00', 'ayuda': '0.00', 'poner_alarma': '0.00'}
+2025-07-02 15:52:33,120 log_util.py INFO:[PREDICT_MODEL] TFIDF scores: {'encender_luz': '0.30', 'subir_volumen': '0.30', 'poner_alarma': '0.30'}
+2025-07-02 15:52:33,120 log_util.py INFO:[PREDICT_MODEL] ENSEMBLE scores: {'apagar_luz': '0.50', 'ayuda': '0.00', 'poner_alarma': '0.15'}
+2025-07-02 15:52:33,120 INFO:     172.26.0.1:59600 - "POST /predict?domain=hogar&locale=es&userUtterance=apaga%20la%20luz%20del%20sal%C3%B3n HTTP/1.1" 200 OK
+2025-07-02 15:52:33,231 log_util.py INFO:[PREDICT_NLU] prediction: {'intent': {'name': 'reproducir_musica', 'confidence': '1.00'}, 'entities': [], 'intent_ranking': [{'name': 'reproducir_musica', 'confidence': '1.00', 'utterance': 'reproduce música'}, {'name': 'bajar_volumen', 'confidence': '0.00', 'utterance': 'baja el volumen'}, {'name': 'ayuda', 'confidence': '0.00', 'utterance': 'ayuda'}], 'text': 'reproduce música'}
+2025-07-02 15:52:33,269 log_util.py INFO:[PREDICT_TFIDF]: {'intent': {'name': 'negar', 'confidence': '0.00'}, 'entities': [], 'intent_ranking': [{'name': 'negar', 'confidence': '0.00', 'utterance': 'da luz al [dormitorio](lugar)'}, {'name': 'parar_musica', 'confidence': '0.00', 'utterance': 'quiero luz en el [salón](lugar)'}, {'name': 'bajar_volumen', 'confidence': '0.00', 'utterance': 'da luz al [dormitorio](lugar)'}], 'text': 'reproduce música'}
+2025-07-02 15:52:33,269 log_util.py INFO:[PREDICT_MODEL] NLU scores: {'reproducir_musica': '1.00', 'bajar_volumen': '0.00', 'ayuda': '0.00'}
+2025-07-02 15:52:33,269 log_util.py INFO:[PREDICT_MODEL] TFIDF scores: {'negar': '0.00', 'parar_musica': '0.00', 'bajar_volumen': '0.00'}
+2025-07-02 15:52:33,269 log_util.py INFO:[PREDICT_MODEL] ENSEMBLE scores: {'reproducir_musica': '0.50', 'bajar_volumen': '0.00', 'ayuda': '0.00'}
+2025-07-02 15:52:33,270 INFO:     172.26.0.1:59614 - "POST /predict?domain=hogar&locale=es&userUtterance=reproduce%20m%C3%BAsica HTTP/1.1" 200 OK
+2025-07-02 15:52:33,458 INFO:     172.26.0.10:48006 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:52:33,527 log_util.py INFO:[PREDICT_NLU] prediction: {'intent': {'name': 'encender_luz', 'confidence': '1.00'}, 'entities': [{'entity': 'lugar', 'start': 20, 'end': 25, 'confidence_entity': 0.9988213181495667, 'value': 'salón', 'extractor': 'DIETClassifier', 'processors': ['EntitySynonymMapper']}], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '0.00', 'utterance': 'sube el volumen'}, {'name': 'poner_alarma', 'confidence': '0.00', 'utterance': 'pon una alarma a las 8'}], 'text': 'enciende la luz del salón'}
+2025-07-02 15:52:33,565 log_util.py INFO:[PREDICT_TFIDF]: {'intent': {'name': 'encender_luz', 'confidence': '1.00'}, 'entities': [], 'intent_ranking': [{'name': 'encender_luz', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'parar_musica', 'confidence': '1.00', 'utterance': 'enciende la luz'}, {'name': 'subir_volumen', 'confidence': '1.00', 'utterance': 'enciende la luz'}], 'text': 'enciende la luz del salón'}
+2025-07-02 15:52:33,566 log_util.py INFO:[PREDICT_MODEL] NLU scores: {'encender_luz': '1.00', 'subir_volumen': '0.00', 'poner_alarma': '0.00'}
+2025-07-02 15:52:33,566 log_util.py INFO:[PREDICT_MODEL] TFIDF scores: {'encender_luz': '1.00', 'parar_musica': '1.00', 'subir_volumen': '1.00'}
+2025-07-02 15:52:33,566 log_util.py INFO:[PREDICT_MODEL] ENSEMBLE scores: {'encender_luz': '1.00', 'subir_volumen': '0.50', 'poner_alarma': '0.00'}
+2025-07-02 15:52:33,566 INFO:     172.26.0.10:48006 - "POST /predict?domain=hogar&locale=es&userUtterance=enciende%20la%20luz%20del%20sal%C3%B3n HTTP/1.1" 200 OK
+2025-07-02 15:52:44,338 INFO:     127.0.0.1:60712 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:53:14,392 INFO:     127.0.0.1:59718 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:53:44,446 INFO:     127.0.0.1:40766 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:54:14,520 INFO:     127.0.0.1:35524 - "GET /health HTTP/1.1" 200 OK
+2025-07-02 15:54:44,593 INFO:     127.0.0.1:33850 - "GET /health HTTP/1.1" 200 OK

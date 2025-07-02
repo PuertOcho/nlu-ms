@@ -1,5 +1,5 @@
-# Usar imagen base con soporte CUDA para GPU
-FROM tensorflow/tensorflow:2.15.0-gpu
+# Usar imagen base compatible con Rasa 3.6.0
+FROM python:3.10-slim
 
 # Evitar interacciones durante la instalación
 ENV DEBIAN_FRONTEND=noninteractive
