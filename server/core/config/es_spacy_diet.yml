@@ -1,0 +1,46 @@
+language: es
+pipeline:
+  # Componente base de spaCy (REQUERIDO)
+  - name: SpacyNLP
+    model: es_core_news_md
+
+  # Tokenización usando spaCy para español
+  - name: SpacyTokenizer
+
+  # Características de spaCy para español
+  - name: SpacyFeaturizer
+
+  # Características de expresiones regulares
+  - name: RegexFeaturizer
+
+  # Características léxicas y sintácticas
+  - name: LexicalSyntacticFeaturizer
+
+  # Vectorización de conteo de palabras
+  - name: CountVectorsFeaturizer
+    analyzer: word
+    min_ngram: 1
+    max_ngram: 2
+
+  # Vectorización de conteo de caracteres
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+
+  # Clasificador DIET para intenciones y entidades
+  - name: DIETClassifier
+    epochs: 150
+    learning_rate: 0.001
+    constrain_similarities: true
+    entity_recognition: true
+    intent_classification: true
+    use_masked_language_model: false
+    BILOU_flag: true
+
+  # Mapeo de sinónimos de entidades
+  - name: EntitySynonymMapper
+
+  # Selector de respuestas (opcional para futuras funcionalidades)
+  - name: ResponseSelector
+    epochs: 100 
