@@ -1,0 +1,15 @@
+version: "3.0"
+nlu:
+
+- intent: accion_compleja_taiga
+  examples: |
+    - Genera reporte general de todos los proyectos
+    - Genera reporte del proyecto [E-commerce](proyecto)
+    - Genera reporte del proyecto [42](proyecto)
+    - Ejecuta acción compleja en Taiga
+    - Ejecuta acción compleja sobre el proyecto [IoT Hub](proyecto)
+    - Analiza el proyecto [55](proyecto) y dame recomendaciones
+    - Analiza el proyecto [Plataforma Móvil](proyecto)
+    - Crea epic Sistema de Login en el proyecto [E-commerce](proyecto)
+    - Crea epic Seguridad para el proyecto [66](proyecto)
+    - Importa tareas al proyecto [Analytics](proyecto) 
