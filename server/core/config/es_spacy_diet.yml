@@ -28,18 +28,10 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
 
-  # Modelo BERT multilingüe para embeddings contextualizados
-  - name: HFTransformersNLP
-    model_name: "bert-base-multilingual-cased"
-    model_weights: "bert-base-multilingual-cased"
-    cache_dir: null
-
-  # Clasificador DIET mejorado con BERT
+  # Clasificador DIET con spaCy + CountVectors (sin transformers)
   - name: DIETClassifier
     epochs: 200
     learning_rate: 0.0005
-    transformer_dim: 768
-    use_masked_language_model: true
     constrain_similarities: true
     entity_recognition: true
     intent_classification: true
