@@ -30,4 +30,12 @@ nlu:
     - Genera reporte del proyecto [Analytics](proyecto)
     - Genera reporte del proyecto número [99](proyecto)
     - Dame recomendaciones del proyecto [Seguridad](proyecto)
-    - Dame recomendaciones del proyecto [10](proyecto) 
+    - Dame recomendaciones del proyecto [10](proyecto)
+    - En Taiga genera reporte general de los proyectos
+    - En Taiga genera reporte del proyecto [E-commerce](proyecto)
+    - En Taiga genera reporte del proyecto [42](proyecto)
+    - Usa Taiga para generar reporte del proyecto [Backoffice](proyecto)
+    - Usa Taiga para crear epic Seguridad en el proyecto [66](proyecto)
+    - Usa Taiga para importar tareas al proyecto [Analytics](proyecto)
+    - En Taiga analiza el proyecto [Backend](proyecto) y dame recomendaciones
+    - En Taiga analiza el proyecto [77](proyecto) y dame recomendaciones 
