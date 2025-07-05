@@ -38,4 +38,27 @@ nlu:
     - Usa Taiga para crear epic Seguridad en el proyecto [66](proyecto)
     - Usa Taiga para importar tareas al proyecto [Analytics](proyecto)
     - En Taiga analiza el proyecto [Backend](proyecto) y dame recomendaciones
-    - En Taiga analiza el proyecto [77](proyecto) y dame recomendaciones 
+    - En Taiga analiza el proyecto [77](proyecto) y dame recomendaciones
+    - En Taiga genera reporte del proyecto [Backend](proyecto)
+    - En Taiga genera reporte del proyecto [Analytics](proyecto)
+    - En Taiga genera reporte del proyecto [Seguridad](proyecto)
+    - En Taiga genera reporte del proyecto [Plataforma Web](proyecto)
+    - En Taiga genera reporte del proyecto [Mobile](proyecto)
+    - Usa Taiga para analizar el proyecto [E-commerce](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Analytics](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Backend](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Seguridad](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Mobile](proyecto) y dame un resumen
+
+- lookup: proyecto
+  examples: |
+    - E-commerce
+    - Backend
+    - Analytics
+    - Seguridad
+    - Plataforma Web
+    - Mobile
+    - Backoffice
+    - IoT Hub
+    - Ventas
+    - Marketing 
