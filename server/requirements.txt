@@ -1,5 +1,5 @@
-kafka-python~=2.0.2
-rasa[transformers]==3.7.8
+kafka-python==2.0.2
+rasa[transformers]==3.6.16
 nltk~=3.8.0
 fastapi~=0.104.0
 uvicorn~=0.24.0
