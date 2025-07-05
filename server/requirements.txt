@@ -3,6 +3,4 @@ rasa[transformers]==3.6.16
 nltk~=3.8.0
 fastapi~=0.104.0
 uvicorn~=0.24.0
-transformers==4.41.2
-torch~=2.1.2
 sentencepiece~=0.1.99
