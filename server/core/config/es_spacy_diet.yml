@@ -28,14 +28,21 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
 
-  # Clasificador DIET para intenciones y entidades
+  # Modelo BERT multilingüe para embeddings contextualizados
+  - name: HFTransformersNLP
+    model_name: "bert-base-multilingual-cased"
+    model_weights: "bert-base-multilingual-cased"
+    cache_dir: null
+
+  # Clasificador DIET mejorado con BERT
   - name: DIETClassifier
-    epochs: 150
-    learning_rate: 0.001
+    epochs: 200
+    learning_rate: 0.0005
+    transformer_dim: 768
+    use_masked_language_model: true
     constrain_similarities: true
     entity_recognition: true
     intent_classification: true
-    use_masked_language_model: false
     BILOU_flag: true
 
   # Mapeo de sinónimos de entidades
