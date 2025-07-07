@@ -50,6 +50,8 @@ def check_data_available(domain, locale) -> bool:
     for file in files:
         if file == (domain+'_'+ locale + '.yml'):
             return True
+        if file == 'intents.yml':
+            return True
         else:
             pass
     return False
@@ -66,6 +68,8 @@ def is_config_stale(domain, locale):
     hash_original = tmp.read()
     # need to check if any changes to data, property file or rasa config file
     dataFile = os.path.join(dataPath, domain + '_' + locale + '.yml')
+    if not os.path.exists(dataFile):
+        dataFile = os.path.join(dataPath, 'intents.yml')
     data_1 = open(dataFile, 'rb').read()
     # check if any changs in properties
     load_parameters()
@@ -115,7 +119,20 @@ def get_scores(response):
 
 
 def normalise_entity_score(response):
+    """Normaliza el campo confidence_entity y garantiza que la estructura no sea nula."""
+    if response is None:
+        # Construir respuesta por defecto para evitar excepciones río arriba
+        return {
+            "intent": {"name": "unknown", "confidence": "0.00"},
+            "entities": [],
+            "intent_ranking": [],
+            "text": ""
+        }
+    # Asegurar que la clave entities existe y es lista
+    if "entities" not in response or response["entities"] is None:
+        response["entities"] = []
+
     if len(response["entities"]) != 0:
         for items in response["entities"]:
-            items["confidence_entity"] = "{:.3f}".format(items["confidence_entity"])
+            items["confidence_entity"] = "{:.3f}".format(float(items.get("confidence_entity", 0)))
     return response

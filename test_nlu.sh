@@ -19,7 +19,7 @@ else
 fi
 
 echo "🎯 Entrenando modelo en español..."
-curl -X POST "http://localhost:5001/train?domain=hogar&locale=es"
+curl -X POST "http://localhost:5001/train?domain=intents&locale=es"
 
 echo -e "\n⏳ Esperando que termine el entrenamiento..."
 sleep 60
@@ -27,13 +27,13 @@ sleep 60
 echo -e "\n🧪 Probando predicciones..."
 
 echo "Prueba 1: 'enciende la luz de la cocina'"
-curl -X POST "http://localhost:5001/predict?domain=hogar&locale=es&userUtterance=enciende%20la%20luz%20de%20la%20cocina"
+curl -X POST "http://localhost:5001/predict?domain=intents&locale=es&userUtterance=enciende%20la%20luz%20de%20la%20cocina"
 
 echo -e "\n\nPrueba 2: 'qué hora es'"
-curl -X POST "http://localhost:5001/predict?domain=hogar&locale=es&userUtterance=qué%20hora%20es"
+curl -X POST "http://localhost:5001/predict?domain=intents&locale=es&userUtterance=qué%20hora%20es"
 
 echo -e "\n\nPrueba 3: 'reproduce música'"
-curl -X POST "http://localhost:5001/predict?domain=hogar&locale=es&userUtterance=reproduce%20música"
+curl -X POST "http://localhost:5001/predict?domain=intents&locale=es&userUtterance=reproduce%20música"
 
 echo -e "\n\n🧹 Limpiando contenedor de prueba..."
 docker stop puertocho-nlu-test

@@ -9,7 +9,7 @@ Servicio de Procesamiento de Lenguaje Natural (NLU) para el asistente Puerto Och
 - **Pipeline optimizado** con spaCy + DIET classifier
 - **API REST** para integración con microservicios
 - **Entrenamiento dinámico** de modelos
-- **Soporte para dominios** (hogar, música, tiempo, etc.)
+- **Soporte para dominios** (intents, música, tiempo, etc.)
 
 ## 🚀 Inicio Rápido
 
@@ -27,12 +27,12 @@ docker run -d --name puertocho-nlu -p 5001:5001 \
 
 ### 3. Entrenar el modelo
 ```bash
-curl -X POST "http://localhost:5001/train?domain=hogar&locale=es"
+curl -X POST "http://localhost:5001/train?domain=intents&locale=es"
 ```
 
 ### 4. Probar predicciones
 ```bash
-curl -X POST "http://localhost:5001/predict?domain=hogar&locale=es&userUtterance=enciende%20la%20luz"
+curl -X POST "http://localhost:5001/predict?domain=intents&locale=es&userUtterance=enciende%20la%20luz"
 ```
 
 ## 🧪 Prueba Completa
@@ -49,7 +49,7 @@ nlu-ms/
 ├── server/
 │   ├── training_data/
 │   │   └── intents/
-│   │       └── hogar_es.yml          # Datos de entrenamiento en español
+│   │       └── intents_es.yml          # Datos de entrenamiento en español
 │   │   └── intents/
 │   │       └── banking_en.yml          # Datos de entrenamiento en inglés
 │   ├── core/
@@ -111,7 +111,7 @@ GET /health
 ```json
 {
   "messageId": "PREDICT",
-  "domain": "hogar",
+  "domain": "intents",
   "locale": "es",
   "userUtterance": "enciende la luz de la cocina",
   "model": "ENSEMBLE",
@@ -155,7 +155,7 @@ NLU_URL=http://puertocho-assistant-nlu:5001
 
 1. **Edita el archivo de datos de entrenamiento:**
    ```yaml
-   # server/training_data/intents/hogar_es.yml
+   # server/training_data/intents/intents_es.yml
    - intent: nueva_intencion
      examples: |
        - ejemplo 1
@@ -164,7 +164,7 @@ NLU_URL=http://puertocho-assistant-nlu:5001
 
 2. **Reentrena el modelo:**
    ```bash
-   curl -X POST "http://localhost:5001/train?domain=hogar&locale=es"
+   curl -X POST "http://localhost:5001/train?domain=intents&locale=es"
    ```
 
 3. **Reinicia el contenedor** para cargar los cambios:

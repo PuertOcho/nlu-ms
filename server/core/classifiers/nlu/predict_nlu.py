@@ -42,6 +42,9 @@ def get_cached_agent(domain, locale):
 def predict(domain, locale, userUtterance):
     global dataFile
     dataFile = os.path.join(scriptDir, '..', '..', '..', 'training_data', 'intents', domain + '_' + locale + '.yml')
+    # Fallback: si no existe el fichero específico, usar intents.yml unificado
+    if not os.path.exists(dataFile):
+        dataFile = os.path.join(scriptDir, '..', '..', '..', 'training_data', 'intents', 'intents.yml')
     
     # Usar agente cacheado
     agent = get_cached_agent(domain, locale)

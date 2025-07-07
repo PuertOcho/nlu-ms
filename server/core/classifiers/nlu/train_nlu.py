@@ -20,6 +20,9 @@ scriptDir = os.path.dirname(__file__)
 def train(domain, locale):
     dataFile = os.path.join(scriptDir, '..', '..', '..', 'training_data', 'intents',
                             domain + '_' + locale + '.yml')
+    # Fallback a intents.yml si no existe el archivo específico
+    if not os.path.exists(dataFile):
+        dataFile = os.path.join(scriptDir, '..', '..', '..', 'training_data', 'intents', 'intents.yml')
     configFile = os.path.join(scriptDir, '..', '..', 'config', nlp_config.get_parameter('CONFIG_FILE'))
     modelPath = os.path.join(scriptDir, '..', '..', 'models', 'nlu')
     model_name = domain + '_' + locale

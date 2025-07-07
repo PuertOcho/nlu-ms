@@ -18,7 +18,7 @@
 |---------|-------------|
 | **Intención (intent)** | Acción que el usuario desea realizar → `bloquear_pc`, `subir_calefaccion` … |
 | **Entidad (entity)**   | Datos adicionales que la intención necesita → `temperatura=22` |
-| **Dominio**           | Agrupador lógico de intenciones → `pc`, `hogar`, `oficina` |
+| **Dominio**           | Agrupador lógico de intenciones → `pc`, `intents`, `oficina` |
 | **NLU (nlu-ms)**      | Microservicio que entiende la frase (Rasa + TensorFlow GPU). |
 | **Intent Manager**    | Microservicio Java que recibe la intención y ejecuta la **acción**. |
 | **Clases de acción**  | `SystemTools`, `SmartHomeTools`, etc. (invocan comandos, APIs, MQTT…). |

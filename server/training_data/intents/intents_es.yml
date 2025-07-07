@@ -1,0 +1,422 @@
+version: "3.0"
+nlu:
+
+- intent: encender_luz
+  examples: |
+    - enciende la luz
+    - prende la luz
+    - enciende la luz del [lugar](lugar)
+    - prende la luz de la [cocina](lugar)
+    - quiero luz en el [salón](lugar)
+    - activa la luz del [baño](lugar)
+    - ilumina la [habitación](lugar)
+    - pon la luz en la [cocina](lugar)
+    - da luz al [dormitorio](lugar)
+
+- intent: apagar_luz
+  examples: |
+    - apaga la luz
+    - apaga las luces
+    - apaga la luz del [lugar](lugar)
+    - apaga la luz de la [cocina](lugar)
+    - quita la luz del [salón](lugar)
+    - desactiva la luz del [baño](lugar)
+    - oscurece la [habitación](lugar)
+    - quita la luz de la [cocina](lugar)
+    - no quiero luz en el [dormitorio](lugar)
+
+- intent: subir_volumen
+  examples: |
+    - sube el volumen
+    - aumenta el volumen
+    - más alto
+    - más fuerte
+    - sube el audio
+    - aumenta el sonido
+    - pon la música más alta
+    - quiero que suene más fuerte
+
+- intent: bajar_volumen
+  examples: |
+    - baja el volumen
+    - disminuye el volumen
+    - más bajo
+    - menos fuerte
+    - baja el audio
+    - reduce el sonido
+    - pon la música más baja
+    - quiero que suene más suave
+
+- intent: reproducir_musica
+  examples: |
+    - reproduce música
+    - pon música
+    - reproduce [canción](contenido)
+    - pon [rock](genero)
+    - reproduce [The Beatles](artista)
+    - quiero escuchar [jazz](genero)
+    - pon algo de [música clásica](genero)
+    - reproduce mi [playlist favorita](contenido)
+
+- intent: parar_musica
+  examples: |
+    - para la música
+    - detén la música
+    - para el audio
+    - silencio
+    - calla
+    - para de reproducir
+    - detén la reproducción
+    - apaga la música
+
+- intent: consultar_tiempo
+  examples: |
+    - ¿Qué tiempo hace en [Madrid](ubicacion)?
+    - Dame el pronóstico para [Barcelona](ubicacion)
+    - ¿Va a llover en [Valencia](ubicacion)?
+    - ¿Cuál es la temperatura en [Sevilla](ubicacion)?
+    - ¿Hace frío en [Bilbao](ubicacion)?
+    - ¿Cómo está el clima en [Granada](ubicacion)?
+    - ¿Puedes decirme el tiempo en [Alicante](ubicacion)?
+    - ¿Qué clima hay en [Zaragoza](ubicacion)?
+
+- intent: consultar_hora
+  examples: |
+    - qué hora es
+    - dime la hora
+    - cuál es la hora
+    - qué hora tenemos
+    - hora actual
+    - cuándo es
+    - me dices la hora
+
+- intent: poner_alarma
+  examples: |
+    - pon una alarma a las [8](hora)
+    - alarma para las [7 de la mañana](hora)
+    - despiértame a las [6:30](hora)
+    - activa alarma para [mañana a las 9](hora)
+    - alarma para [dentro de 2 horas](hora)
+    - recuérdame [levantarme](evento) a las [7](hora)
+
+- intent: cancelar_alarma
+  examples: |
+    - cancela la alarma
+    - quita la alarma
+    - desactiva la alarma
+    - borra la alarma
+    - elimina la alarma
+    - no quiero la alarma
+    - anula la alarma
+
+- intent: saludo
+  examples: |
+    - hola
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - hey
+    - qué tal
+    - cómo estás
+    - hola Puerto Ocho
+
+- intent: despedida
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos
+    - bye
+    - chau
+    - hasta la vista
+    - que tengas buen día
+    - hasta mañana
+
+- intent: ayuda
+  examples: |
+    - ayuda
+    - qué puedes hacer
+    - cómo funciona
+    - comandos
+    - ayúdame
+    - no entiendo
+    - qué sabes hacer
+    - explícame
+
+- intent: confirmar
+  examples: |
+    - sí
+    - si
+    - vale
+    - okay
+    - ok
+    - perfecto
+    - correcto
+    - exacto
+    - por supuesto
+    - adelante
+
+- intent: negar
+  examples: |
+    - no
+    - no quiero
+    - cancelar
+    - para
+    - detente
+    - no hagas eso
+    - mejor no
+    - déjalo
+
+- intent: accion_compleja_taiga
+  examples: |
+    - Genera reporte general de todos los proyectos
+    - Genera reporte del proyecto [E-commerce](proyecto)
+    - Genera reporte del proyecto [42](proyecto)
+    - Ejecuta acción compleja en Taiga
+    - Ejecuta acción compleja sobre el proyecto [IoT Hub](proyecto)
+    - Analiza el proyecto [55](proyecto) y dame recomendaciones
+    - Analiza el proyecto [Plataforma Móvil](proyecto)
+    - Crea epic Sistema de Login en el proyecto [E-commerce](proyecto)
+    - Crea epic Seguridad para el proyecto [66](proyecto)
+    - Importa tareas al proyecto [Analytics](proyecto)
+    - Analiza proyecto [Analytics](proyecto)
+    - Analiza proyecto con id [77](proyecto)
+    - Haz reporte de Taiga
+    - Haz reporte de todos los proyectos en Taiga
+    - Haz reporte del proyecto [Ventas](proyecto)
+    - Prepara reporte detallado del proyecto [123](proyecto)
+    - Prepara reporte detallado del proyecto [Marketing](proyecto)
+    - Ejecuta acción compleja en el proyecto [Backend](proyecto)
+    - Ejecuta acción compleja en el proyecto [88](proyecto)
+    - Ejecuta acción compleja en el proyecto [Plataforma Web](proyecto)
+    - Crea epic Rendimiento en el proyecto [Backend](proyecto)
+    - Crea epic UX en el proyecto [34](proyecto)
+    - Importa tracker al proyecto [Mobile](proyecto)
+    - Importa tracker al proyecto [55](proyecto)
+    - Genera reporte del proyecto [Analytics](proyecto)
+    - Genera reporte del proyecto número [99](proyecto)
+    - Dame recomendaciones del proyecto [Seguridad](proyecto)
+    - Dame recomendaciones del proyecto [10](proyecto)
+    - En Taiga genera reporte general de los proyectos
+    - En Taiga genera reporte del proyecto [E-commerce](proyecto)
+    - En Taiga genera reporte del proyecto [42](proyecto)
+    - Usa Taiga para generar reporte del proyecto [Backoffice](proyecto)
+    - Usa Taiga para crear epic Seguridad en el proyecto [66](proyecto)
+    - Usa Taiga para importar tareas al proyecto [Analytics](proyecto)
+    - En Taiga analiza el proyecto [Backend](proyecto) y dame recomendaciones
+    - En Taiga analiza el proyecto [77](proyecto) y dame recomendaciones
+    - En Taiga genera reporte del proyecto [Backend](proyecto)
+    - En Taiga genera reporte del proyecto [Analytics](proyecto)
+    - En Taiga genera reporte del proyecto [Seguridad](proyecto)
+    - En Taiga genera reporte del proyecto [Plataforma Web](proyecto)
+    - En Taiga genera reporte del proyecto [Mobile](proyecto)
+    - Usa Taiga para analizar el proyecto [E-commerce](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Analytics](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Backend](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Seguridad](proyecto) y dame un resumen
+    - Usa Taiga para analizar el proyecto [Mobile](proyecto) y dame un resumen
+    - Haz un informe de todos los proyectos en Taiga
+    - Haz un informe del proyecto [Backend](proyecto)
+    - Haz un informe del proyecto [Mobile](proyecto)
+    - Haz un informe del proyecto [Seguridad](proyecto)
+    - Haz un informe del proyecto [Plataforma Web](proyecto)
+    - Haz un informe del proyecto [Analytics](proyecto)
+    - Haz un informe del proyecto [E-commerce](proyecto)
+    - Haz un informe del proyecto [Marketing](proyecto)
+    - Haz un informe del proyecto [Ventas](proyecto)
+    - Haz un informe del proyecto [Backoffice](proyecto)
+    - Crea un epic llamado Seguridad en el proyecto [Backend](proyecto)
+    - Crea un epic llamado Rendimiento en el proyecto [Mobile](proyecto)
+    - Crea un epic llamado UX en el proyecto [Analytics](proyecto)
+    - Importa tareas nuevas al proyecto [Plataforma Web](proyecto)
+    - Importa tareas nuevas al proyecto [Seguridad](proyecto)
+    - Importa tareas nuevas al proyecto [E-commerce](proyecto)
+    - Importa tareas nuevas al proyecto [Marketing](proyecto)
+    - Analiza el proyecto [Backend](proyecto) y genera recomendaciones
+    - Analiza el proyecto [Mobile](proyecto) y genera recomendaciones
+    - Analiza el proyecto [Seguridad](proyecto) y genera recomendaciones
+    - Analiza el proyecto [Plataforma Web](proyecto) y genera recomendaciones
+    - Analiza el proyecto [Analytics](proyecto) y genera recomendaciones
+    - Analiza el proyecto [E-commerce](proyecto) y genera recomendaciones
+    - Analiza el proyecto [Marketing](proyecto) y genera recomendaciones
+    - Analiza el proyecto [Ventas](proyecto) y genera recomendaciones
+    - Analiza el proyecto [Backoffice](proyecto) y genera recomendaciones
+
+- lookup: proyecto
+  examples: |
+    - E-commerce
+    - Backend
+    - Analytics
+    - Seguridad
+    - Plataforma Web
+    - Mobile
+    - Backoffice
+    - IoT Hub
+    - Ventas
+    - Marketing
+    - 10
+    - 34
+    - 42
+    - 55
+    - 66
+    - 77
+    - 88
+    - 99
+    - 123
+
+# --- INTENTS MCP: GitHub, Docker, Cursor, Weather, Web Search ---
+
+- intent: github_listar_repos
+  examples: |
+    - Lista mis repositorios de GitHub
+    - Muéstrame los repositorios en GitHub
+    - ¿Qué repositorios tengo en GitHub?
+    - Enseña los proyectos de mi cuenta de GitHub
+    - ¿Puedes mostrarme mis repos en GitHub?
+    - Saca un listado de mis repositorios
+    - Quiero ver mis proyectos en GitHub
+    - ¿Cuáles son mis repos?
+
+- intent: github_crear_issue
+  examples: |
+    - Crea un issue en el repositorio [puertocho-assistant](repositorio)
+    - Abre un ticket en [backend](repositorio)
+    - Reporta un bug en el repo [frontend](repositorio)
+    - Añade una incidencia en [api-server](repositorio)
+    - ¿Puedes crear un issue en [infraestructura](repositorio)?
+    - Haz un reporte de error en [webapp](repositorio)
+    - Quiero abrir un issue en [mobile](repositorio)
+    - Registra un problema en [servicio-api](repositorio)
+
+- intent: github_crear_pr
+  examples: |
+    - Haz un pull request en [puertocho-assistant](repositorio)
+    - Abre un PR en el repo [backend](repositorio)
+    - Solicita un merge en [frontend](repositorio)
+    - Crea una solicitud de extracción en [api-server](repositorio)
+    - ¿Puedes abrir un PR en [infraestructura](repositorio)?
+    - Quiero hacer un pull request en [webapp](repositorio)
+    - Lanza un PR en [mobile](repositorio)
+    - Haz una solicitud de merge en [servicio-api](repositorio)
+
+- intent: docker_listar_contenedores
+  examples: |
+    - Lista los contenedores Docker
+    - ¿Qué contenedores están corriendo?
+    - Muéstrame los contenedores activos
+    - Enseña los contenedores en ejecución
+    - ¿Puedes mostrarme los contenedores?
+    - Saca un listado de los contenedores Docker
+    - Quiero ver los contenedores que hay
+    - ¿Cuáles son los contenedores activos?
+
+- intent: docker_iniciar_contenedor
+  examples: |
+    - Inicia el contenedor [nginx](contenedor)
+    - Arranca el contenedor [mongo](contenedor)
+    - Levanta el contenedor [redis](contenedor)
+    - Pon en marcha el contenedor [backend](contenedor)
+    - ¿Puedes iniciar el contenedor [frontend](contenedor)?
+    - Quiero arrancar el contenedor [api](contenedor)
+    - Activa el contenedor [db](contenedor)
+    - Haz que funcione el contenedor [web](contenedor)
+
+- intent: docker_detener_contenedor
+  examples: |
+    - Detén el contenedor [nginx](contenedor)
+    - Para el contenedor [mongo](contenedor)
+    - Apaga el contenedor [redis](contenedor)
+    - Finaliza el contenedor [backend](contenedor)
+    - ¿Puedes detener el contenedor [frontend](contenedor)?
+    - Quiero parar el contenedor [api](contenedor)
+    - Desactiva el contenedor [db](contenedor)
+    - Haz que se apague el contenedor [web](contenedor)
+
+- intent: cursor_buscar_fichero
+  examples: |
+    - Busca el archivo [main.py](fichero)
+    - Encuentra el fichero [Dockerfile](fichero)
+    - Localiza el archivo [README.md](fichero)
+    - ¿Dónde está el fichero [config.yml](fichero)?
+    - ¿Puedes buscar el archivo [requirements.txt](fichero)?
+    - Quiero encontrar el fichero [app.js](fichero)
+    - Enséñame dónde está [settings.json](fichero)
+    - Localiza [index.html](fichero) en el proyecto
+
+- intent: cursor_editar_linea
+  examples: |
+    - Edita la línea 42 del archivo [main.py](fichero)
+    - Cambia la línea 10 en [Dockerfile](fichero)
+    - Modifica la línea 5 de [README.md](fichero)
+    - Actualiza la línea 20 en el fichero [config.yml](fichero)
+    - ¿Puedes editar la línea 15 de [settings.json](fichero)?
+    - Quiero cambiar la línea 8 en [app.js](fichero)
+    - Corrige la línea 3 de [index.html](fichero)
+    - Sustituye la línea 25 en [requirements.txt](fichero)
+
+- intent: buscar_web
+  examples: |
+    - Busca en internet [noticias de tecnología](busqueda)
+    - Encuentra información sobre [inteligencia artificial](busqueda)
+    - Haz una búsqueda web de [recetas veganas](busqueda)
+    - Busca en la web [últimos resultados de fútbol](busqueda)
+    - Investiga sobre [cambio climático](busqueda)
+    - ¿Qué es [machine learning](busqueda)?
+    - Quiero buscar [tutoriales de Python](busqueda)
+    - ¿Puedes encontrar [mejores restaurantes en Madrid](busqueda)?
+
+# --- LOOKUPS para nuevas entidades ---
+
+- lookup: repositorio
+  examples: |
+    - puertocho-assistant
+    - backend
+    - frontend
+    - api-server
+    - infraestructura
+    - webapp
+    - mobile
+    - servicio-api
+
+- lookup: contenedor
+  examples: |
+    - nginx
+    - mongo
+    - redis
+    - backend
+    - frontend
+    - api
+    - db
+    - web
+
+- lookup: fichero
+  examples: |
+    - main.py
+    - Dockerfile
+    - README.md
+    - config.yml
+    - requirements.txt
+    - app.js
+    - settings.json
+    - index.html
+
+- lookup: ubicacion
+  examples: |
+    - Madrid
+    - Barcelona
+    - Valencia
+    - Sevilla
+    - Bilbao
+    - Granada
+    - Alicante
+    - Zaragoza
+
+- lookup: busqueda
+  examples: |
+    - noticias de tecnología
+    - inteligencia artificial
+    - recetas veganas
+    - últimos resultados de fútbol
+    - cambio climático
+    - machine learning
+    - tutoriales de Python
+    - mejores restaurantes en Madrid 

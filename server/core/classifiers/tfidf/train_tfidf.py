@@ -31,6 +31,9 @@ def train(domain, locale):
     intent = []
 
     fileData = os.path.join(scriptDir, data_path, domain + '_' + locale + '.yml')
+    # Fallback a intents.yml si no existe el archivo específico
+    if not os.path.exists(fileData):
+        fileData = os.path.join(scriptDir, data_path, 'intents.yml')
     with codecs.open(fileData, 'r', 'utf-8') as dataFile:
         data = yaml.safe_load(dataFile)
     n = 0

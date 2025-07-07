@@ -23,8 +23,9 @@ COPY server/requirements.txt .
 # Instalar dependencias de Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Instalar spaCy con modelo en español y descargar datos NLTK
+# Instalar spaCy con modelo en español y descargar datos NLTK y modelo transformers
 RUN python -m spacy download es_core_news_md && \
+    python -m spacy download es_dep_news_trf && \
     python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')"
 
 # Copiar el resto del código
